@@ -63,7 +63,9 @@ export default function Feed() {
   useEffect(() => {
     // console.log("Test");
     Axios({
-      url: `http://localhost:5000/mylistings/${JSON.parse(localStorage.getItem("user"))._id}`,
+      url: `https://lost-backend-3lwz.onrender.com/mylistings/${
+        JSON.parse(localStorage.getItem("user"))._id
+      }`,
       method: "GET",
     })
       .then((response) => {

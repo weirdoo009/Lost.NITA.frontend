@@ -43,7 +43,7 @@ export default class Signup extends Component {
     };
     // console.log(payload.username)
     axios({
-      url: "http://localhost:5000/signup",
+      url: "https://lost-backend-3lwz.onrender.com/signup",
       method: "POST",
       data: payload,
     })

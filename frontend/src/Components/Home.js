@@ -67,7 +67,7 @@ export default function Home() {
     };
     Axios({
       method: "POST",
-      url: "http://localhost:5000/sendmessage",
+      url: "https://lost-backend-3lwz.onrender.com/sendmessage",
       data: data,
     })
       .then((res) => {
@@ -111,7 +111,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
 
         {/* <div className="post-item">
           <button class="button" onClick={postitem}>Post Item</button>
@@ -135,9 +134,17 @@ export default function Home() {
               of the college students. A problem will still remain the same
               until someone builds a solution to it.
             </p>
-            { <Button variant="custom" size="lg" onClick={()=>{ref.current.scrollIntoView({ behavior: 'smooth' })}}>
-              Get Started
-            </Button> }
+            {
+              <Button
+                variant="custom"
+                size="lg"
+                onClick={() => {
+                  ref.current.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                Get Started
+              </Button>
+            }
           </Row>
         </Container>
       </div>
@@ -279,13 +286,15 @@ export default function Home() {
           >
             <img src={linkedin} className="icon" alt="" />
           </a>
-          { <a
-            href="https://www.instagram.com/ashutosh.__.sahu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={instagram} className="icon" alt="" />
-          </a> }
+          {
+            <a
+              href="https://www.instagram.com/ashutosh.__.sahu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={instagram} className="icon" alt="" />
+            </a>
+          }
           <a
             href="mailto:ashutosh.ecellnita@gmail.com"
             target="_blank"

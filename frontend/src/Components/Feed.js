@@ -64,7 +64,7 @@ export default function Feed() {
   useEffect(() => {
     // console.log("Test");
     Axios({
-      url: "http://localhost:5000/getitem",
+      url: "https://lost-backend-3lwz.onrender.com/getitem",
       method: "GET",
     })
       .then((response) => {
@@ -101,7 +101,7 @@ export default function Feed() {
             }
             // console.log(item)
             // console.log("Lost item "+user+item.name)
-            // console.log(`http://localhost:5000/${item.itemPictures[0].img}`)
+            // console.log(`https://lost-backend-3lwz.onrender.com/${item.itemPictures[0].img}`)
             items.push(
               <a
                 href={`/${item.name}?cid=${item._id}&type=${item.type}/${user}`}

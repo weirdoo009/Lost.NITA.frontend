@@ -21,11 +21,11 @@ function Login() {
       password: document.getElementById("password").value,
     };
     axios({
-      url: "http://localhost:5000/login",
+      url: "https://lost-backend-3lwz.onrender.com/login",
       method: "POST",
       data: payload,
 
-      // url: "http://localhost:5000/login"
+      // url: "https://lost-backend-3lwz.onrender.com/login"
     })
       .then((response) => {
         console.log("Response is :", response);
@@ -67,7 +67,7 @@ function Login() {
   //         password: document.getElementById('password').value,
   //       },
   //       withCredentials: true,
-  //       url: " http://localhost:5000/login",
+  //       url: " https://lost-backend-3lwz.onrender.com/login",
   //     })
   //     .then((res) => console.log(res))
   //     .catch((err)=>console.log(err));

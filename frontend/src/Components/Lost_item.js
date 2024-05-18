@@ -42,7 +42,7 @@ function LostItem() {
       });
 
       axios({
-        url: "http://localhost:5000/postitem",
+        url: "https://lost-backend-3lwz.onrender.com/postitem",
         method: "POST",
         data: info,
         headers: {
@@ -55,7 +55,7 @@ function LostItem() {
               "%"
           );
         },
-        // url: "http://localhost:5000/login"
+        // url: "https://lost-backend-3lwz.onrender.com/login"
       })
         .then((response) => {
           console.log(response);

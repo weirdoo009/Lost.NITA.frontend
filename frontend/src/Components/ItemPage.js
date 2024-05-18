@@ -65,7 +65,7 @@ function ItemPage(props) {
     // console.log("dd")
     Axios({
       method: "POST",
-      url: `http://localhost:5000/activateItem/${item_id}`,
+      url: `https://lost-backend-3lwz.onrender.com/activateItem/${item_id}`,
     })
       .then((res) => {
         console.log("Activated");
@@ -112,9 +112,7 @@ function ItemPage(props) {
   useEffect(() => {
     const { location } = props;
     Axios({
-      url: `https://lfs-backend.herokuapp.com/item/${
-        item_id
-      }`,
+      url: `https://lfs-backend.herokuapp.com/item/${item_id}`,
       method: "GET",
     })
       .then((response) => {
